@@ -11,7 +11,7 @@ export function overlayAnim (fn) {
     tl.from('.line span', 1.8, { 
             y: 100,
             ease: "power4.out",
-            delay: 1,
+            delay: 0,
             skewY: 7,
             stagger: {
                 amount: 0.3
@@ -51,7 +51,7 @@ export function menuAnimation (dimension) {
     .to("body", { css: {overflow: 'hidden'} })
     .to(".App", {
         duration: 1,
-        y: dimension.width <= 654 ? '55vh' : dimension.width <= 768 ? '55vh' : '65vh',
+        y: dimension.width <= 654 ? '55vh' : dimension.width <= 768 ? '55vh' : '70vh',
         ease: 'expo.inOut'
     })
     .to(".hamburger-menu span", {

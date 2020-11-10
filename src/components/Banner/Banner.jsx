@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ReactComponent as Arrow } from '../../assets/arrow-right.svg'
 
 const Banner = () => {
@@ -15,7 +16,7 @@ const Banner = () => {
                         </div>
                     </h2>
                     <div className="btn-row">
-                        <a href="/">More about us <Arrow /> </a>
+                        <Link to="/about">More about us <Arrow /> </Link>
                     </div>
                 </div>
             </div>
