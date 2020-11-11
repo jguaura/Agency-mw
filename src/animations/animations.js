@@ -47,11 +47,11 @@ export function overlayAnim (fn) {
 
 export function menuAnimation (dimension) { 
     tl
-    .to("nav", { duration: 0.01, css: {display: 'block'}})
+    .to("nav", { duration: 0.01, css: { display: 'block' }})
     .to("body", { css: {overflow: 'hidden'} })
     .to(".App", {
         duration: 1,
-        y: dimension.width <= 654 ? '55vh' : dimension.width <= 768 ? '55vh' : '70vh',
+        y: dimension.width <= 654 ? '70vh' : dimension.width <= 768 ? '55vh' : dimension.width <= 1600 ? '70vh' : dimension.height >= 999 ? '53vh' : '70vh',
         ease: 'expo.inOut'
     })
     .to(".hamburger-menu span", {
